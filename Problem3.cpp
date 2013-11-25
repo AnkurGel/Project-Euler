@@ -7,8 +7,10 @@ bool is_prime(long n) {
   long i = 2, max = sqrt(n);
   bool result = true;
   for(; i <= max; i++){
-    if(n % i == 0)
+    if(n % i == 0){
       result = false;
+      break;
+    }
   }
   return result;
 }
