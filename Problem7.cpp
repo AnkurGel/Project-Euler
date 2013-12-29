@@ -12,8 +12,9 @@ int main(){
     if(is_prime(i)){
       counter += 1;
       cout << i << "\t" << counter << endl;
+      i += 2;
     }
-    i++;
+    else i++;
   }
   return 0;
 }
